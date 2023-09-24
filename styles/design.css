@@ -1,0 +1,164 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  width: 40%;
+  padding: 30px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.notification-container{
+  display: flex;
+  align-items: center;
+}
+.notification-container h3{
+  margin-right: 10px;
+  font-weight: 800;
+  font-size: 20px;
+}
+.notification-container div{
+  background-color: hsl(219, 85%, 26%);
+  height: 21px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  color: hsl(0, 0%, 100%);
+}
+nav p{
+  color: hsl(219, 14%, 63%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+nav p:hover{
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+}
+
+/********************************************************/
+main{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.top .text, .bottom .text{
+  display: flex;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: hsl(210, 60%, 98%);
+}
+.top .text img, .bottom .text img{
+  height: 40px;
+  margin-right: 20px;
+}
+.top .text .body, .bottom .text .body{
+  display: flex;
+  flex-direction: column;
+}
+.top .text .body .head{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+.top .text .body .head p, .top .text .body p{
+  color: hsl(219, 12%, 42%);
+  margin-right: 5px;
+}
+
+.top .text .body .head .name, .bottom .text .body .name, .bottom .text .body-message .name{
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.top .text .body .head .name:hover{
+  color: hsl(219, 85%, 26%);
+}
+.bottom .text .body .name:hover{
+  color: hsl(219, 85%, 26%);
+}
+.bottom .text .body-message .name:hover{
+  color: hsl(219, 85%, 26%);
+}
+.top .text .body .head .points, .bottom .text .body .points{
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.top .text .body .points:hover{
+  color: hsl(219, 85%, 26%);
+}
+.top .text .body .head .point, .bottom .text .body .point{
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  cursor: pointer;
+}
+.top .text .body .head .dot{
+  width: 0;
+  height: 0;
+  border: 3px solid red;
+  border-radius: 50%;
+}
+.bottom .text{
+  background-color: hsl(0, 0%, 100%);
+}
+.bottom .text .body-message{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.bottom .text .body p, .bottom .text .body-message .left p{
+  margin-bottom: 5px;
+  color: hsl(219, 12%, 42%);
+}
+.bottom .text .body-message .right{
+  padding: 2px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.bottom .text .body-message .right:hover{
+  border: 2px solid hsl(205, 33%, 90%);
+  border-radius: 10px;
+}
+
+.bottom .text .body-message .right img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.bottom .text .body .message{
+  border: 1px solid hsl(211, 68%, 94%);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.bottom .text .body .message:hover{
+  background-color: hsl(211, 68%, 94%);
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin: 20px;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (width <= 375px){
+  nav{
+    width: 90%;
+  }
+  main{
+    width: 90%;
+  }
+}
